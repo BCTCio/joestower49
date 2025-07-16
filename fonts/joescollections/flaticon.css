@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?132d1b262111789f01d76e700946a994") format("truetype"),
+url("./flaticon.woff?132d1b262111789f01d76e700946a994") format("woff"),
+url("./flaticon.woff2?132d1b262111789f01d76e700946a994") format("woff2"),
+url("./flaticon.eot?132d1b262111789f01d76e700946a994#iefix") format("embedded-opentype"),
+url("./flaticon.svg?132d1b262111789f01d76e700946a994#flaticon") format("svg");
+
+}
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?a3c97a0ef5ed1f1295387eb7fc384a18") format("truetype"),
+url("./flaticon.woff?a3c97a0ef5ed1f1295387eb7fc384a18") format("woff"),
+url("./flaticon.woff2?a3c97a0ef5ed1f1295387eb7fc384a18") format("woff2"),
+url("./flaticon.eot?a3c97a0ef5ed1f1295387eb7fc384a18#iefix") format("embedded-opentype"),
+url("./flaticon.svg?a3c97a0ef5ed1f1295387eb7fc384a18#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+$flaticon-map: (
+    "facebook": "\f101",
+    "instagram": "\f102",
+    "yelp": "\f103",
+);
+
+.flaticon-facebook:before {
+    content: map-get($flaticon-map, "facebook");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon-map, "instagram");
+}
+.flaticon-yelp:before {
+    content: map-get($flaticon-map, "yelp");
+}
+
+
+
+.flaticon-buns:before {
+    content: "\f101";
+}
+.flaticon-meat:before {
+    content: "\f102";
+}
+.flaticon-noodles:before {
+    content: "\f103";
+}
+.flaticon-seafood:before {
+    content: "\f104";
+}
+.flaticon-sour-soup:before {
+    content: "\f105";
+}
+.flaticon-vegetable:before {
+    content: "\f106";
+}

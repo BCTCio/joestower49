@@ -1,0 +1,21 @@
+# Begin cache control #
+ExpiresActive on
+ExpiresActive off
+<FilesMatch ".*">
+Header unset Cache-Control
+Header unset Expires
+Header unset Last-Modified
+FileETag None
+Header unset Pragma
+</FilesMatch>
+# End cache control #
+
+# Begin EnforceSSL joestower49.com
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(www.)?joestower49.com$
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L]
+</IfModule>
+# End EnforceSSL
+

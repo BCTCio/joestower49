@@ -1,0 +1,49 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?132d1b262111789f01d76e700946a994") format("truetype"),
+url("./flaticon.woff?132d1b262111789f01d76e700946a994") format("woff"),
+url("./flaticon.woff2?132d1b262111789f01d76e700946a994") format("woff2"),
+url("./flaticon.eot?132d1b262111789f01d76e700946a994#iefix") format("embedded-opentype"),
+url("./flaticon.svg?132d1b262111789f01d76e700946a994#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "buns": "\f101",
+    "meat": "\f102",
+    "noodles": "\f103",
+    "seafood": "\f104",
+    "sour-soup": "\f105",
+    "vegetable": "\f106",
+);
+
+.flaticon-buns:before {
+    content: map-get($flaticon-map, "buns");
+}
+.flaticon-meat:before {
+    content: map-get($flaticon-map, "meat");
+}
+.flaticon-noodles:before {
+    content: map-get($flaticon-map, "noodles");
+}
+.flaticon-seafood:before {
+    content: map-get($flaticon-map, "seafood");
+}
+.flaticon-sour-soup:before {
+    content: map-get($flaticon-map, "sour-soup");
+}
+.flaticon-vegetable:before {
+    content: map-get($flaticon-map, "vegetable");
+}
